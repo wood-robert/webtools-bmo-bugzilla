@@ -29,6 +29,8 @@ BEGIN {
 }
 use Bugzilla::WebService::Server::XMLRPC;
 
+print STDERR "hello?\n";
+
 Bugzilla->usage_mode(USAGE_MODE_XMLRPC);
 
 # Fix the error code that SOAP::Lite uses for Perl errors.
